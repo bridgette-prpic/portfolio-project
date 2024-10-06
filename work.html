@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio Project - About</title>
+    <meta
+      name="description"
+      content="Bridgette is a front-end developer, view her projects"
+    />
+    <title>Bridgette Prpic - Work</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -27,25 +31,114 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="content-container container">
-    <div class="content">
-      <h1 class="mb-5">Take a look at what I've been working on!</h1>
-      <div class="row">
-        <div class="col-md-4 mb-5">
-          <img src="images/ai-cocktail.png" class="img-fluid mb-3" alt="" />
-          <h3 class="">AI Cocktail Project</h3>
-          <p class="text-muted">Built with HTML, CSS and AI</p>
+  <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage">
+          <img
+            src="images/bdesign.png"
+            class="logo-big d-none d-md-block"
+            alt="Bridgette logo" />
+          <img
+            src="images/logo.jpeg"
+            class="logo-small d-block d-md-none"
+            alt="Bridgette logo"
+        /></a>
+        <ul>
+          <li>
+            <a href="/" title="Homepage">Home</a>
+          </li>
+          <li><a href="/about.html" title="About Bridgette">About</a></li>
+          <li class="active">
+            <a href="/work.html" title="Bridgette's Work">Work</a>
+          </li>
+          <li>
+            <a href="/contact.html" title="Contact Bridgette">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="content-container container">
+      <div class="content">
+        <h1 class="mb-5">Take a look at what I've been working on!</h1>
+        <div class="row">
+          <div class="col-md-4 mb-5">
+            <a href="https://ai-cocktail-generator.netlify.app" target="_blank"
+              ><img
+                src="images/ai-cocktail.png"
+                class="img-fluid mb-3"
+                alt="View AI Cocktail Project"
+            /></a>
+            <h3 class="">AI Cocktail Project</h3>
+            <p class="text-muted">Built with HTML, CSS and AI</p>
+          </div>
+          <div class="col-md-4 mb-5">
+            <a href="https://bridgettes-weather-app.netlify.app" target="_blank"
+              ><img
+                src="images/weather.png"
+                class="img-fluid mb-3"
+                alt="View Weather Project"
+            /></a>
+            <h3 class="">Weather Project</h3>
+            <p class="text-muted">Built with HTML, CSS and JavaScript</p>
+          </div>
+          <div class="col-md-4 mb-5">
+            <a href="https://bridgettes-world-clock.netlify.app" target="_blank"
+              ><img
+                src="images/world-clock.png"
+                class="img-fluid mb-3"
+                alt="View World Clock Project"
+            /></a>
+            <h3>World Clock Project</h3>
+            <p class="text-muted">Built with HTML, CSS and React</p>
+          </div>
         </div>
-        <div class="col-md-4 mb-5">
-          <img src="images/weather.png" class="img-fluid mb-3" alt="" />
-          <h3 class="">Weather Project</h3>
-          <p class="text-muted">Built with HTML, CSS and JavaScript</p>
-        </div>
-        <div class="col-md-4 mb-5">
-          <img src="images/world-clock.png" class="img-fluid mb-3" alt="" />
-          <h3 class="">World Clock Project</h3>
-          <p class="text-muted">Built with HTML, CSS and React</p>
-        </div>
+        <footer>
+          <div
+            class="contact-box d-flex justify-content-between mb-5 d-none d-md-flex"
+          >
+            <div>
+              <h3>Work Inquiry</h3>
+              <p class="text-muted">Let's work together</p>
+            </div>
+            <div>
+              <a href="/contact.html" class="btn btn-branding">Contact me</a>
+            </div>
+          </div>
+          <a
+            href="mailto:bridgette.prpic@gmail.com"
+            class="email-link d-flex justify-content-center mb-4"
+            title="Email Bridgette"
+            >bridgette.prpic@gmail.com</a
+          >
+          <div class="social-links d-flex justify-content-center">
+            <a href="mailto:bridgette.prpic@gmail.com" title="Email Bridgette"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            <a
+              href="https://github.com/bridgette-prpic"
+              target="_blank"
+              title="Check out Bridgette's GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/meezbridgette/"
+              target="_blank"
+              title="Follow Bridgette on Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <p class="text-center mt-4">
+            This site was coded by B. Prpic and is
+            <a
+              href="https://github.com/bridgette-prpic/portfolio-project"
+              target="_blank"
+              class="github-link text-decoration-none"
+              title="Link to project on GitHub"
+              >open-sourced</a
+            >
+          </p>
+        </footer>
       </div>
     </div>
   </body>
