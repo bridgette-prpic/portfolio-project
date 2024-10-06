@@ -1,6 +1,7 @@
 :root {
-  --primary-color: #484b6a;
-  --secondary-color: #e4e5f1;
+  --primary-color: #285a84;
+  --secondary-color: #e5ebef;
+  --accent-color: #d5a49d;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -51,7 +52,6 @@ p {
 .hero h2 {
   font-family: var(--default-font-family);
   font-weight: normal;
-  line-height: 1.5px;
   font-size: 24px;
 }
 
@@ -111,6 +111,43 @@ img {
   padding: 120px 60px;
 }
 
+.logo-big {
+  max-width: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.logo-small {
+  max-height: 40px;
+  margin-top: 40px;
+}
+
+nav ul {
+  padding: 40px;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a {
+  color: var(--accent-color);
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
 @media (max-width: 900px) {
   h1 {
     font-size: 44px;
@@ -118,10 +155,11 @@ img {
   }
   h2 {
     font-size: 38px;
+    line-height: 2;
   }
 
   p {
-    font-size: 42px;
+    font-size: 22px;
   }
 
   .hero {
@@ -144,5 +182,9 @@ img {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+
+  nav a {
+    font-size: 14px;
   }
 }
